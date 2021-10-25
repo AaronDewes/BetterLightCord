@@ -117,6 +117,7 @@ export default new class V2_SettingsPanel {
 
     updateSettings(id, enabled, sidebar) {
         if(!["lightcord-8", "no_window_bound", "enable_glasstron", "lightcord-10", "lightcord-11"].includes(id))settingsCookie[id] = enabled;
+        let appSettings = window.Lightcord.Api.settings
 
         switch(id) {
             case "bda-gs-1":
@@ -195,7 +196,6 @@ export default new class V2_SettingsPanel {
                 enabled ? disableTyping.enable() : disableTyping.disable()
                 break;
             case "lightcord-8":
-                let appSettings = window.Lightcord.Api.settings
                 appSettings.set("isTabs", enabled)
                 appSettings.save()
                 DiscordNative.app.relaunch()
@@ -207,7 +207,6 @@ export default new class V2_SettingsPanel {
                 core.methods.NotificationsUseShim(enabled)
                 return;
             case "lightcord-11":
-                let appSettings = window.Lightcord.Api.settings
                 if(!enabled){
                     appSettings.delete("BD_"+id)
                     appSettings.save()
@@ -228,8 +227,7 @@ export default new class V2_SettingsPanel {
                 }
                 else CustomRichPresence.disable()
                 break;
-            case "no_window_bound": 
-                let appSettings = window.Lightcord.Api.settings
+            case "no_window_bound":
                 appSettings.set("NO_WINDOWS_BOUND", enabled)
 
                 appSettings.delete("IS_MAXIMIZED")
@@ -240,7 +238,6 @@ export default new class V2_SettingsPanel {
                 DiscordNative.app.relaunch()
                 break;
             case "enable_glasstron":
-                let appSettings = window.Lightcord.Api.settings
                 appSettings.set("GLASSTRON", enabled)
                 appSettings.save()
                 DiscordNative.app.relaunch()

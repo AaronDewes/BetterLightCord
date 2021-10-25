@@ -44,9 +44,9 @@ function setupHardwareAcceleration() {
 	}
 }
 
-electron.app.allowRendererProcessReuse = false;
+//electron.app.allowRendererProcessReuse = false;
 
-global["releaseChannel"] = "stable";
+global["releaseChannel"] = "canary";
 
 setupHardwareAcceleration();
 function hasArgvFlag(flag) {

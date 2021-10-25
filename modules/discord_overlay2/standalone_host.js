@@ -31,7 +31,7 @@ if (process.versions.electron) {
 }
 
 app.disableHardwareAcceleration();
-app.allowRendererProcessReuse = false;
+//app.allowRendererProcessReuse = false;
 app.commandLine.appendSwitch('autoplay-policy', 'no-user-gesture-required');
 app.whenReady().then(function () {
   var buildInfo = require(path.join(process.resourcesPath, 'build_info.json'));
