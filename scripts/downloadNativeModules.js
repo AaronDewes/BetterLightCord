@@ -1,4 +1,4 @@
-const fetch = require("node-fetch")
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args))
 const yauzl = require("yauzl")
 const tmp = require("tmp")
 const fs = require("fs")

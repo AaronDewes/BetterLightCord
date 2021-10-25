@@ -4,7 +4,7 @@ const Logger = require("./Logger")
 const fs = require("fs")
 const path = require("path")
 const electron = require("electron")
-const fetch = require("node-fetch").default
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args)).default
 const uuid = require("uuid/v4")
 
 const isPackaged = electron.remote.app.isPackaged
