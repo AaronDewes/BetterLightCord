@@ -130,7 +130,7 @@ export const Constants = {
             ],
             scopes: [],
             component: BugHunterBadge,
-            href: "https://github.com/lightcord/lightcord/wiki/badges#bug_hunter"
+            href: "https://github.com/BetterLightcord/BetterLightcord/wiki/badges#bug_hunter"
         }, {
             name: "Buffoon",
             id: "06904d31-65b4-41ec-a50c-8658bbd1af96",

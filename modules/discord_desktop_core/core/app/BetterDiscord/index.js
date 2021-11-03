@@ -479,7 +479,7 @@ async function privateInit(){
                     data.friend_suggestion_count = data.friend_suggestion_count || 0
                     data.presences = data.presences || []
                     const buildInfo = electron.ipcRenderer.sendSync("LIGHTCORD_GET_BUILD_INFOS")
-                    electron.ipcRenderer.sendSync("LIGHTCORD_SET_USER_AGENT", `DiscordBot (https://github.com/lightcord/lightcord, v${buildInfo.version})`)
+                    electron.ipcRenderer.sendSync("LIGHTCORD_SET_USER_AGENT", `DiscordBot (https://github.com/BetterLightcord/BetterLightcord, v${buildInfo.version})`)
                 }else{
                     electron.ipcRenderer.sendSync("LIGHTCORD_SET_USER_AGENT", UserAgent)
                     logger.log(`Logged in as an user. Skipping user spoofing.`)

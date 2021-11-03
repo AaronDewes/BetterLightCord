@@ -17,7 +17,7 @@ import settings from "./modules/settings"
 patchers.patch()
 
 /**
- * Lightcord Api defined at [/LightcordApi/src/index.ts](https://github.com/Lightcord/Lightcord/blob/master/LightcordApi/src/index.ts#L22)
+ * Lightcord Api defined at [/LightcordApi/src/index.ts](https://github.com/BetterLightcord/BetterLightcord/blob/master/LightcordApi/src/index.ts#L22)
  */
 const LightcordApi = {
     /**
@@ -120,7 +120,7 @@ export interface LightcordGlobal {
  */
 type LightcordApiGlobal = lightcordApiMainExports & typeof LightcordApi
 
-/** Exports that are defined [here](https://github.com/Lightcord/Lightcord/blob/master/modules/discord_desktop_core/core/app/BetterDiscord/index.js#L278) */
+/** Exports that are defined [here](https://github.com/BetterLightcord/BetterLightcord/blob/master/modules/discord_desktop_core/core/app/BetterDiscord/index.js#L278) */
 type lightcordApiMainExports = {
     /**
      * Waits until the first module that match the filter gets exported

@@ -237,7 +237,7 @@ function setMainWindowVisible(visible) {
 
 function updateApp(version){
   const bootstrapModules = require('./bootstrapModules')
-  //const updateLink = "https://github.com/Lightcord/Lightcord/archive/master.zip"
+  //const updateLink = "https://github.com/BetterLightcord/BetterLightcord/archive/master.zip"
 
   bootstrapModules.splashScreen.setSplashState({
     status: "downloading-updates",

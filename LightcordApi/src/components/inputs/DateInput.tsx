@@ -220,7 +220,7 @@ export default class DateInput extends React.Component<DateInputProps, {
     }
 
     static help = {
-        warn: "This component is still `experimental`. Please report issues to [Lightcord's developers](https://github.com/Lightcord/Lightcord/issues)."
+        warn: "This component is still `experimental`. Please report issues to [Lightcord's developers](https://github.com/BetterLightcord/BetterLightcord/issues)."
     }
 
     static get AllPreviews(){

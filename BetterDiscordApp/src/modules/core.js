@@ -178,7 +178,7 @@ Core.prototype.patchAttributes = async function() {
             } else if (props.user.id === "696481194443014174" || props.user.id === "363022107753578496"|| props.user.id === "424639027606585356"){ // Not Thomiz: Lightcord Developer, Phorcys: Lightcord Developer, smartfridge: Lightcord Dev
                 children.push(
                     BDV2.React.createElement(TooltipWrap, {color: "black", side: "top", text: "Lightcord Developer"},
-                        BDV2.React.createElement(Anchor, {className: "bd-chat-badge", href: "https://github.com/Lightcord/Lightcord", title: "Lightcord", target: "_blank"},
+                        BDV2.React.createElement(Anchor, {className: "bd-chat-badge", href: "https://github.com/BetterLightcord/BetterLightcord", title: "Lightcord", target: "_blank"},
                             BDV2.React.createElement(LightcordLogo, {size: "16px", className: "bd-logo"})
                         )
                     )
@@ -347,7 +347,7 @@ Core.prototype.patchSocial = function() {
                 const returnVal = original(...arguments);
                 returnVal.props.children.push(
                     BDV2.React.createElement(TooltipWrap, {color: "black", side: "top", text: "Lightcord"},
-                        BDV2.React.createElement(Anchor, {className: "bd-social-link "+socialModule1.link, href: "https://github.com/Lightcord/Lightcord", title: "Lightcord", target: "_blank"},
+                        BDV2.React.createElement(Anchor, {className: "bd-social-link "+socialModule1.link, href: "https://github.com/BetterLightcord/BetterLightcord", title: "Lightcord", target: "_blank"},
                             BDV2.React.createElement(LightcordLogo, {size: "16px", className: "bd-social-logo"})
                         )
                     )
@@ -520,7 +520,7 @@ Core.prototype.patchMessageHeader = function() {
                 Anchor,
                 {
                   className: "bd-chat-badge",
-                  href: "https://github.com/Lightcord/Lightcord",
+                  href: "https://github.com/BetterLightcord/BetterLightcord",
                   title: "Lightcord",
                   target: "_blank",
                 },
@@ -619,7 +619,7 @@ Core.prototype.patchMemberList = function() {
         } else if (user.id === "696481194443014174" || user.id === "696003456611385396"){
             children.push(
                 BDV2.React.createElement(TooltipWrap, {color: "black", side: "top", text: "Lightcord Developer"},
-                    BDV2.React.createElement(Anchor, {className: "bd-member-badge", href: "https://github.com/Lightcord/Lightcord", title: "Lightcord", target: "_blank"},
+                    BDV2.React.createElement(Anchor, {className: "bd-member-badge", href: "https://github.com/BetterLightcord/BetterLightcord", title: "Lightcord", target: "_blank"},
                         BDV2.React.createElement(LightcordLogo, {size: "16px", className: "bd-logo"})
                     )
                 )
