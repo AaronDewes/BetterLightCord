@@ -7,11 +7,9 @@
         "outDir": "./dist",
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "rootDir": "./src"
+        "rootDir": "."
     },
-    "exclude": [
-        "./DiscordJS",
-        "./LightcordApi",
-        "./distApp"
+    "include": [
+        "src/**.ts"
     ]
 }

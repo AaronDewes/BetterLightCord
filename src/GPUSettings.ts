@@ -7,9 +7,9 @@
 // so tl;dr this is core module's GPUSettings, providing compat for web
 
 export function replace(GPUSettings) {
-  // replacing module.exports directly would have no effect, since requires are cached
-  // so we mutate the existing object
-  for (const name of Object.keys(GPUSettings)) {
-    exports[name] = GPUSettings[name];
-  }
-};
+    // replacing module.exports directly would have no effect, since requires are cached
+    // so we mutate the existing object
+    for (const name of Object.keys(GPUSettings)) {
+        exports[name] = GPUSettings[name];
+    }
+}
