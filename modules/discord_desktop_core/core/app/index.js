@@ -189,9 +189,9 @@ function startup(bootstrapModules) {
     console.log("Checking if version "+version+" is outdated...")
     bootstrapModules.splashScreen.initSplash()
     bootstrapModules.splashScreen.events.on("SPLASH_SCREEN_READY", () => {
-      fetch("https://raw.githubusercontent.com/Lightcord/Lightcord/master/package.json", {
+      fetch("https://raw.githubusercontent.com/BetterLightcord/BetterLightcord/master/package.json", {
         headers: {
-          "User-Agent": "Lightcord-Updater/1.0"
+          "User-Agent": "BetterLightcord-Updater/1.0"
         }
       }).then(async res => {
         const body = await res.json()
